@@ -19,7 +19,7 @@ set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-rpath-link=/usr
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-rpath-link=/usr/local/cuda/lib64")
 
 find_library(LIB_V4L2 nvv4l2 PATHS /usr/lib/aarch64-linux-gnu/nvidia)
-find_library(message (STATUS "LIB_NVJPEG: ${LIB_NVJPEG}") nvjpeg PATHS /usr/lib/aarch64-linux-gnu/nvidia)
+find_library(LIB_NVJPEG nvjpeg PATHS /usr/lib/aarch64-linux-gnu/nvidia)
 find_package (Threads)
 
 set(NVMPI_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
